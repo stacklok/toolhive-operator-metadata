@@ -193,9 +193,10 @@ $(echo "$DEPLOYMENT_YAML" | yq eval '.spec' - | sed 's/^/            /')
     - name: Toolhive
       url: https://github.com/stacklok/toolhive
     - name: Documentation
-      url: https://github.com/stacklok/toolhive/tree/main/docs
+      url: https://docs.stacklok.com/
+    - name: Discord
+      url: https://discord.gg/stacklok
   maintainers:
-    - email: support@stacklok.com
       name: Stacklok
   maturity: alpha
   minKubeVersion: 1.27.0
