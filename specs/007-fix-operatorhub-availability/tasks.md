@@ -55,9 +55,9 @@ This is a Kubernetes operator metadata repository. File paths:
 
 ## Phase 3: User Story 1 - OperatorHub Displays Catalog with Operator Count (Priority: P1) 🎯 MVP
 
-**Goal**: Fix catalog metadata so OperatorHub shows "Toolhive Operator Catalog" with "(1)" operator count
+**Goal**: Fix catalog metadata so OperatorHub shows "ToolHive Operator Catalog" with "(1)" operator count
 
-**Independent Test**: Deploy the CatalogSource to an OpenShift cluster and verify the OperatorHub UI shows "Toolhive Operator Catalog" with "1 operator" in the Sources section.
+**Independent Test**: Deploy the CatalogSource to an OpenShift cluster and verify the OperatorHub UI shows "ToolHive Operator Catalog" with "1 operator" in the Sources section.
 
 ### Implementation for User Story 1
 
@@ -127,8 +127,8 @@ This is a Kubernetes operator metadata repository. File paths:
 - [ ] T026 [US1] Wait for CatalogSource ready status - `kubectl wait --for=condition=Ready catalogsource/toolhive-catalog -n openshift-marketplace --timeout=60s`
 - [ ] T027 [US1] Verify PackageManifest created - `kubectl get packagemanifest -n openshift-marketplace toolhive-operator` (should exist)
 - [ ] T028 [US1] Inspect PackageManifest for correct metadata - `kubectl get packagemanifest toolhive-operator -n openshift-marketplace -o yaml | grep -A10 "channels:"`
-- [ ] T029 [US1] Verify OperatorHub UI shows catalog name "Toolhive Operator Catalog" with "(1)" operator count in Sources section
-- [ ] T030 [US1] Verify Toolhive Operator appears in OperatorHub search with description and icon
+- [ ] T029 [US1] Verify OperatorHub UI shows catalog name "ToolHive Operator Catalog" with "(1)" operator count in Sources section
+- [ ] T030 [US1] Verify ToolHive Operator appears in OperatorHub search with description and icon
 
 ### Verify User Story 3 (Subscription Installation)
 
@@ -278,7 +278,7 @@ With multiple developers:
 
 ### Independent Test Criteria
 
-**User Story 1**: Deploy CatalogSource and verify OperatorHub UI shows "Toolhive Operator Catalog" with "(1)" operator count (T025-T030)
+**User Story 1**: Deploy CatalogSource and verify OperatorHub UI shows "ToolHive Operator Catalog" with "(1)" operator count (T025-T030)
 
 **User Story 2**: Review example files and verify they reference quay.io/roddiekieley registry; deploy using unmodified examples (T017-T018, implicit in T025-T035)
 

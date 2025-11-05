@@ -9,7 +9,7 @@
 
 ### User Story 1 - Deploy Catalog as Running Service (Priority: P1)
 
-As a cluster operator, I want to deploy the Toolhive operator catalog image as a running pod in my Kubernetes/OpenShift cluster, so that OLM can dynamically discover and serve operator metadata through the catalog's registry server.
+As a cluster operator, I want to deploy the ToolHive operator catalog image as a running pod in my Kubernetes/OpenShift cluster, so that OLM can dynamically discover and serve operator metadata through the catalog's registry server.
 
 **Why this priority**: This is the core requirement that enables OLMv1 File-Based Catalogs to function as running services. Without an executable catalog image, the catalog cannot be deployed and OLM cannot access the operator metadata at runtime. This is the foundational capability that all other scenarios depend on.
 

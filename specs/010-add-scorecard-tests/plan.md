@@ -5,7 +5,7 @@
 
 ## Summary
 
-Implement Operator SDK Scorecard validation testing for the Toolhive Operator metadata repository. Scorecard provides static validation of OLM bundles by executing tests in Kubernetes Pods to verify bundle structure, CSV correctness, and OLM compliance. This feature adds scorecard configuration, Makefile targets, and documentation to enable automated bundle validation before deployment.
+Implement Operator SDK Scorecard validation testing for the ToolHive Operator metadata repository. Scorecard provides static validation of OLM bundles by executing tests in Kubernetes Pods to verify bundle structure, CSV correctness, and OLM compliance. This feature adds scorecard configuration, Makefile targets, and documentation to enable automated bundle validation before deployment.
 
 **Technical Approach** (from research):
 - Use bundle directory testing (`operator-sdk scorecard ./bundle`) for rapid iteration

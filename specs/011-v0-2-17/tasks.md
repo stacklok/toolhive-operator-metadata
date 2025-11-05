@@ -1,6 +1,6 @@
-# Implementation Tasks: Upgrade Toolhive Operator to v0.3.11
+# Implementation Tasks: Upgrade ToolHive Operator to v0.3.11
 
-**Feature**: Upgrade Toolhive Operator to v0.3.11 (011-v0-2-17)
+**Feature**: Upgrade ToolHive Operator to v0.3.11 (011-v0-2-17)
 **Branch**: `011-v0-2-17`
 **Date**: 2025-10-21
 

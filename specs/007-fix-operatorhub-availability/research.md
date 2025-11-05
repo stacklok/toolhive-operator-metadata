@@ -153,7 +153,7 @@ metadata:
   name: toolhive-catalog
   namespace: openshift-marketplace
 spec:
-  displayName: Toolhive Operator Catalog  # Shows in Sources section
+  displayName: ToolHive Operator Catalog  # Shows in Sources section
   publisher: Stacklok  # Shows in OperatorHub
 ```
 
@@ -162,7 +162,7 @@ spec:
 schema: olm.package
 name: toolhive-operator
 description: |
-  Toolhive Operator manages MCP servers...
+  ToolHive Operator manages MCP servers...
 icon:
   base64data: PHN2Zy...
   mediatype: image/svg+xml
@@ -175,9 +175,9 @@ kind: ClusterServiceVersion
 metadata:
   name: toolhive-operator.v0.2.17
 spec:
-  displayName: Toolhive Operator  # Primary display name in OperatorHub
+  displayName: ToolHive Operator  # Primary display name in OperatorHub
   description: |
-    The Toolhive Operator manages MCP servers...
+    The ToolHive Operator manages MCP servers...
   icon:
     - base64data: PHN2Zy...
       mediatype: image/svg+xml
@@ -187,7 +187,7 @@ spec:
 
 | UI Element | Data Source | Current Status |
 |------------|-------------|----------------|
-| **Sources Section - Catalog Name** | CatalogSource.spec.displayName | ✅ Shows "Toolhive Operator Catalog" |
+| **Sources Section - Catalog Name** | CatalogSource.spec.displayName | ✅ Shows "ToolHive Operator Catalog" |
 | **Sources Section - Operator Count** | Count of packages with valid CSV | ❌ Shows "(0)" - no CSV in bundle |
 | **Operator Tile - Name** | CSV.spec.displayName | ❌ Not displayed - no CSV in bundle |
 | **Operator Tile - Description** | CSV.spec.description (first line) | ❌ Not displayed - no CSV in bundle |
@@ -213,7 +213,7 @@ spec:
 **CatalogSource fields** (from `/wip/src/github.com/RHEcosystemAppEng/toolhive-operator-metadata/examples/catalogsource-olmv1.yaml`):
 ```yaml
 spec:
-  displayName: Toolhive Operator Catalog
+  displayName: ToolHive Operator Catalog
   publisher: Stacklok
   sourceType: grpc
   image: ghcr.io/stacklok/toolhive/catalog:v0.2.17
@@ -247,7 +247,7 @@ defaultChannel: fast  # Must exist in olm.channel entries
    - Recommended: Keep consistent for user clarity
 
 5. **CatalogSource.spec.displayName contains package theme**
-   - Current: "Toolhive Operator Catalog" (good naming)
+   - Current: "ToolHive Operator Catalog" (good naming)
    - Recommended: Include "Catalog" suffix to differentiate from operator name
 
 ### Alternatives Considered
@@ -270,7 +270,7 @@ defaultChannel: fast  # Must exist in olm.channel entries
 - **Purpose**: Identifies the catalog source in OperatorHub Sources section
 - **Scope**: Applies to the entire catalog (may contain multiple packages)
 - **Display**: Shows in Sources list with operator count in parentheses
-- **Example**: "Toolhive Operator Catalog (1)"
+- **Example**: "ToolHive Operator Catalog (1)"
 
 **olm.package.description** (Package-level):
 - **Purpose**: Provides package-level description for documentation
@@ -282,16 +282,16 @@ defaultChannel: fast  # Must exist in olm.channel entries
 - **Purpose**: Primary operator name shown in OperatorHub
 - **Scope**: Describes a specific operator version
 - **Display**: **Primary operator name in OperatorHub tiles and details**
-- **Example**: "Toolhive Operator"
+- **Example**: "ToolHive Operator"
 
 ### Rationale: Three-Tier Hierarchy
 
 ```
-CatalogSource (Toolhive Operator Catalog)
+CatalogSource (ToolHive Operator Catalog)
 └── Package (toolhive-operator)
     ├── Channel (fast)
     │   └── Bundle (v0.2.17)
-    │       └── CSV (Toolhive Operator)
+    │       └── CSV (ToolHive Operator)
     └── Channel (stable) [future]
         └── Bundle (v1.0.0) [future]
 ```
@@ -312,10 +312,10 @@ OperatorHub → Sources
 **Expected** (catalog.yaml with CSV):
 ```
 OperatorHub → Sources
-  └── Toolhive Operator Catalog (1)  ✅
+  └── ToolHive Operator Catalog (1)  ✅
 
 OperatorHub → All Items
-  └── [Toolhive Operator]  ✅ CSV.spec.displayName
+  └── [ToolHive Operator]  ✅ CSV.spec.displayName
       Icon: [blue M icon]   ✅ CSV.spec.icon
       Description: "Manages MCP servers..."  ✅ CSV.spec.description
 ```
@@ -334,7 +334,7 @@ oc get catalogsource -n openshift-marketplace toolhive-catalog
 
 # Expected output:
 # NAME               DISPLAY                       TYPE   PUBLISHER   AGE
-# toolhive-catalog   Toolhive Operator Catalog     grpc   Stacklok    2m
+# toolhive-catalog   ToolHive Operator Catalog     grpc   Stacklok    2m
 ```
 
 **Check CatalogSource status conditions**:
@@ -401,7 +401,7 @@ oc get packagemanifest toolhive-operator
 
 # Expected output:
 # NAME                CATALOG                       AGE
-# toolhive-operator   Toolhive Operator Catalog     2m
+# toolhive-operator   ToolHive Operator Catalog     2m
 
 # If missing, PackageManifest was not created → catalog metadata issue
 ```
@@ -414,14 +414,14 @@ oc get packagemanifest toolhive-operator -o yaml
 # status:
 #   catalogSource: toolhive-catalog
 #   catalogSourceNamespace: openshift-marketplace
-#   catalogSourceDisplayName: Toolhive Operator Catalog
+#   catalogSourceDisplayName: ToolHive Operator Catalog
 #   provider:
 #     name: Stacklok
 #   channels:
 #     - name: fast
 #       currentCSV: toolhive-operator.v0.2.17
 #       currentCSVDesc:
-#         displayName: Toolhive Operator  ← Should come from CSV
+#         displayName: ToolHive Operator  ← Should come from CSV
 #         description: "..."               ← Should come from CSV
 #         icon:
 #           - base64data: "..."            ← Should come from CSV
@@ -438,11 +438,11 @@ oc get packagemanifest toolhive-operator -o yaml
 **Via Web Console**:
 1. Navigate to: Operators → OperatorHub
 2. Check Sources section (left sidebar):
-   - Should show "Toolhive Operator Catalog (1)"
+   - Should show "ToolHive Operator Catalog (1)"
    - Number in parentheses = operator count
 3. Search for "toolhive" in search box
 4. Operator tile should appear with:
-   - Name: "Toolhive Operator"
+   - Name: "ToolHive Operator"
    - Icon: Blue M icon
    - Description preview
    - Provider: "Stacklok"
@@ -456,7 +456,7 @@ oc get packagemanifests -l catalog=toolhive-catalog
 oc get packagemanifests -o json | jq '.items[] | select(.metadata.name == "toolhive-operator") | .status.catalogSourceDisplayName'
 
 # Expected output:
-# "Toolhive Operator Catalog"
+# "ToolHive Operator Catalog"
 ```
 
 **Step 6: Debug Catalog Metadata Structure**
@@ -576,7 +576,7 @@ opm alpha render-template basic catalog/toolhive-operator
 
 1. **CatalogSource Level** (Catalog identity)
    - Field: `spec.displayName`
-   - Display: Sources section → "Toolhive Operator Catalog (N)"
+   - Display: Sources section → "ToolHive Operator Catalog (N)"
    - Purpose: Identifies catalog source containing multiple operators
 
 2. **Package Level** (Package metadata)
@@ -678,7 +678,7 @@ oc get packagemanifest toolhive-operator
 
 # Inspect operator metadata
 oc get packagemanifest toolhive-operator -o jsonpath='{.status.channels[0].currentCSVDesc.displayName}'
-# Expected: "Toolhive Operator"
+# Expected: "ToolHive Operator"
 ```
 
 If PackageManifest is missing, check catalog pod logs for errors.

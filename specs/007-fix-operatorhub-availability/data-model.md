@@ -345,14 +345,14 @@ kubectl get catalogsource -n openshift-marketplace toolhive-catalog -o yaml
 # Verify PackageManifest creation
 kubectl get packagemanifest -n openshift-marketplace toolhive-operator
 
-# Expected: NAME = toolhive-operator, CATALOG = Toolhive Operator Catalog, AGE = <time>
+# Expected: NAME = toolhive-operator, CATALOG = ToolHive Operator Catalog, AGE = <time>
 ```
 
 ### OperatorHub UI Validation
 - Navigate to OperatorHub → Sources
-- Verify "Toolhive Operator Catalog" appears with "(1)" operator count
+- Verify "ToolHive Operator Catalog" appears with "(1)" operator count
 - Click catalog entry
-- Verify "Toolhive Operator" appears with description and icon
+- Verify "ToolHive Operator" appears with description and icon
 
 ---
 

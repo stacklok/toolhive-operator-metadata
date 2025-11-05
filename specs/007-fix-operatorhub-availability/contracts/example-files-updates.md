@@ -41,7 +41,7 @@ spec:
 
 These fields are already correct:
 - ✅ `metadata.namespace: openshift-marketplace` - Correct for OpenShift community catalogs
-- ✅ `spec.displayName: Toolhive Operator Catalog` - Appropriate display name
+- ✅ `spec.displayName: ToolHive Operator Catalog` - Appropriate display name
 - ✅ `spec.sourceType: grpc` - Correct for FBC with registry-server
 - ✅ `spec.publisher: Stacklok` - Correct publisher
 
@@ -67,7 +67,7 @@ spec:
   image: quay.io/roddiekieley/toolhive-operator-catalog:v0.2.17
 
   # Display name shown in OperatorHub UI
-  displayName: Toolhive Operator Catalog
+  displayName: ToolHive Operator Catalog
 
   # Publisher information
   publisher: Stacklok
@@ -86,7 +86,7 @@ spec:
 
 ## File 2: examples/subscription.yaml
 
-**Purpose**: Install Toolhive Operator from deployed catalog
+**Purpose**: Install ToolHive Operator from deployed catalog
 
 ### Required Changes
 
@@ -258,7 +258,7 @@ The example files are considered correct when:
 3. **OperatorHub UI verification**:
    - Navigate to OperatorHub in OpenShift Console
    - Click "Sources" tab
-   - Verify "Toolhive Operator Catalog" shows with "(1)"
+   - Verify "ToolHive Operator Catalog" shows with "(1)"
    - Search for "toolhive"
    - Verify operator appears with description and icon
 

@@ -43,7 +43,7 @@ schema: olm.package
 name: toolhive-operator
 defaultChannel: fast
 description: |
-  Toolhive Operator manages MCP (Model Context Protocol) servers
+  ToolHive Operator manages MCP (Model Context Protocol) servers
   and registries in Kubernetes/OpenShift environments.
 
 ---
@@ -75,7 +75,7 @@ properties:
       version: 0.2.17
   - type: olm.csv.metadata
     value:
-      displayName: Toolhive Operator
+      displayName: ToolHive Operator
       description: Manages MCP servers and registries
       minKubeVersion: 1.21.0
 ```
@@ -134,7 +134,7 @@ Container Image: ghcr.io/stacklok/toolhive/index-olmv0:v0.2.17
 Table: package
 ├── name: "toolhive-operator"
 ├── default_channel: "fast"
-└── description: "Toolhive Operator manages MCP servers and registries"
+└── description: "ToolHive Operator manages MCP servers and registries"
 
 Table: channel
 ├── package_name: "toolhive-operator"
@@ -254,7 +254,7 @@ metadata:
 spec:
   sourceType: grpc
   image: ghcr.io/stacklok/toolhive/catalog:v0.2.17          # FBC catalog image
-  displayName: Toolhive Operator Catalog (OLMv1)
+  displayName: ToolHive Operator Catalog (OLMv1)
   publisher: Stacklok
   updateStrategy:
     registryPoll:
@@ -271,7 +271,7 @@ metadata:
 spec:
   sourceType: grpc
   image: ghcr.io/stacklok/toolhive/index-olmv0:v0.2.17      # SQLite index image
-  displayName: Toolhive Operator Catalog (OLMv0)
+  displayName: ToolHive Operator Catalog (OLMv0)
   publisher: Stacklok
   updateStrategy:
     registryPoll:

@@ -1,6 +1,6 @@
-# Toolhive Operator - Deployment Examples
+# ToolHive Operator - Deployment Examples
 
-This directory contains example Kubernetes/OpenShift manifests for deploying the Toolhive Operator.
+This directory contains example Kubernetes/OpenShift manifests for deploying the ToolHive Operator.
 
 ## CatalogSource Examples
 
@@ -24,7 +24,7 @@ Are you running OpenShift 4.19 or newer?
           │         ⚠️  Will be sunset when 4.18 reaches EOL
           │
           └─ NO  → Unsupported OpenShift version
-                    Please upgrade to 4.15+ to use Toolhive Operator
+                    Please upgrade to 4.15+ to use ToolHive Operator
 ```
 
 ## File Descriptions
@@ -84,7 +84,7 @@ kubectl apply -f examples/subscription.yaml
 
 ### subscription.yaml
 
-**Description**: Example Subscription resource for installing the Toolhive Operator after deploying a CatalogSource.
+**Description**: Example Subscription resource for installing the ToolHive Operator after deploying a CatalogSource.
 
 **Usage**:
 ```bash

@@ -407,7 +407,7 @@ BUNDLE_ICON=icons/my-logo.png make bundle
   - Incorrect aspect ratio: Displayed with original ratio (may look distorted in rectangular tile)
   - Best practice: Provide exact 80x40 dimensions to ensure optimal display
 
-- **Current Toolhive icon issue**: Embedded icon is 512x512 SVG (violates 80x40 recommendation)
+- **Current ToolHive icon issue**: Embedded icon is 512x512 SVG (violates 80x40 recommendation)
   ```xml
   <svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
   ```

@@ -109,7 +109,7 @@ spec:
           - kind: ConfigMap
             version: v1
   description: |
-    Toolhive Operator manages Model Context Protocol (MCP) servers and registries on Kubernetes.
+    ToolHive Operator manages Model Context Protocol (MCP) servers and registries on Kubernetes.
 
     The operator provides custom resources for:
     - **MCPRegistry**: Manages registries of MCP server definitions
@@ -120,7 +120,7 @@ spec:
     - **MCPToolConfig**: Configures individual tools within MCP servers
 
     MCP enables AI assistants to securely access external tools and data sources.
-  displayName: Toolhive Operator
+  displayName: ToolHive Operator
   icon:
     - base64data: ""
       mediatype: image/png
@@ -190,7 +190,7 @@ $(echo "$DEPLOYMENT_YAML" | yq eval '.spec' - | sed 's/^/            /')
     - llm
     - developer-tools
   links:
-    - name: Toolhive
+    - name: ToolHive
       url: https://github.com/stacklok/toolhive
     - name: Documentation
       url: https://github.com/stacklok/toolhive/tree/main/docs

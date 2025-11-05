@@ -7,7 +7,7 @@
 
 ## Summary
 
-Create OLMv1 File-Based Catalog (FBC) bundle metadata for the Toolhive Operator to enable distribution and installation through Operator Lifecycle Manager v1. The implementation adds catalog metadata files following the FBC schema specification (olm.package, olm.channel, olm.bundle), provides tooling to build catalog container images using opm, and ensures operator-sdk validation compliance for production readiness.
+Create OLMv1 File-Based Catalog (FBC) bundle metadata for the ToolHive Operator to enable distribution and installation through Operator Lifecycle Manager v1. The implementation adds catalog metadata files following the FBC schema specification (olm.package, olm.channel, olm.bundle), provides tooling to build catalog container images using opm, and ensures operator-sdk validation compliance for production readiness.
 
 ## Technical Context
 

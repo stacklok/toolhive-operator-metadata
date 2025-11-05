@@ -1,4 +1,4 @@
-# Quick Start: Upgrade Toolhive Operator to v0.3.11
+# Quick Start: Upgrade ToolHive Operator to v0.3.11
 
 **Feature**: 011-v0-2-17
 **Target Time**: 15 minutes (configuration) + 15 minutes (validation)

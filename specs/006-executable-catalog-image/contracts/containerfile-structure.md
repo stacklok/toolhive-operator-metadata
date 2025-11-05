@@ -148,8 +148,8 @@ LABEL operators.operatorframework.io.index.configs.v1=/configs
 #### OCI Metadata Labels (Recommended)
 
 ```dockerfile
-LABEL org.opencontainers.image.title="Toolhive Operator Catalog"
-LABEL org.opencontainers.image.description="File-Based Catalog for Toolhive Operator (OLMv1)"
+LABEL org.opencontainers.image.title="ToolHive Operator Catalog"
+LABEL org.opencontainers.image.description="File-Based Catalog for ToolHive Operator (OLMv1)"
 LABEL org.opencontainers.image.vendor="Stacklok"
 LABEL org.opencontainers.image.source="https://github.com/RHEcosystemAppEng/toolhive-operator-metadata"
 LABEL org.opencontainers.image.version="v0.2.17"

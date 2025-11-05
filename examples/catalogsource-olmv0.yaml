@@ -1,5 +1,5 @@
 ---
-# CatalogSource for Toolhive Operator (OLMv0 - Legacy OpenShift 4.15-4.18)
+# CatalogSource for ToolHive Operator (OLMv0 - Legacy OpenShift 4.15-4.18)
 #
 # ⚠️  DEPRECATION NOTICE
 # This CatalogSource uses a SQLite-based index image (OLMv0), which is
@@ -47,7 +47,7 @@ spec:
   image: quay.io/roddiekieley/toolhive-operator-index:v0.4.2
 
   # Display name shown in OperatorHub (indicates legacy format)
-  displayName: Toolhive Operator Catalog (Legacy)
+  displayName: ToolHive Operator Catalog (Legacy)
 
   # Publisher organization
   publisher: Stacklok

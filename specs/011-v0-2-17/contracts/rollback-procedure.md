@@ -282,7 +282,7 @@ kubectl get events -n opendatahub --field-selector involvedObject.kind=Pod | gre
 1. **Immediate**: Initiate rollback to v0.2.17 using standard procedure (Steps 1-5)
 2. **Verify**: After rollback, confirm operator logs no longer show signature errors
 3. **Document**: Capture full error messages and cosign version info
-4. **Escalate**: Report to upstream Toolhive project with evidence
+4. **Escalate**: Report to upstream ToolHive project with evidence
 5. **Wait**: Do not retry v0.3.11 until upstream addresses cosign compatibility
 
 **Note**: This failure mode cannot be detected by build/validation tests (T010-T013); only appears in live cluster runtime.

@@ -8,7 +8,7 @@
 
 ## Purpose
 
-Define CatalogSource manifest specifications for both OLMv1 (File-Based Catalog) and OLMv0 (SQLite Index) deployments. These examples guide administrators in deploying the Toolhive operator on different OpenShift versions.
+Define CatalogSource manifest specifications for both OLMv1 (File-Based Catalog) and OLMv0 (SQLite Index) deployments. These examples guide administrators in deploying the ToolHive operator on different OpenShift versions.
 
 ## File 1: `examples/catalogsource-olmv1.yaml`
 
@@ -19,7 +19,7 @@ CatalogSource for modern OpenShift 4.19+ using OLMv1 File-Based Catalog image.
 
 ```yaml
 ---
-# CatalogSource for Toolhive Operator (OLMv1 - Modern OpenShift 4.19+)
+# CatalogSource for ToolHive Operator (OLMv1 - Modern OpenShift 4.19+)
 #
 # This CatalogSource references a File-Based Catalog (FBC) image for modern
 # OpenShift deployments. FBC is the recommended catalog format for OLM.
@@ -50,7 +50,7 @@ spec:
   image: ghcr.io/stacklok/toolhive/catalog:v0.2.17
 
   # Display name shown in OperatorHub
-  displayName: Toolhive Operator Catalog
+  displayName: ToolHive Operator Catalog
 
   # Publisher organization
   publisher: Stacklok
@@ -78,7 +78,7 @@ spec:
 | `metadata.namespace` | `olm` | Standard OLM namespace for catalog sources |
 | `spec.sourceType` | `grpc` | Image-based catalog served via gRPC |
 | `spec.image` | `ghcr.io/stacklok/toolhive/catalog:v0.2.17` | OLMv1 FBC catalog image |
-| `spec.displayName` | `Toolhive Operator Catalog` | Human-readable name in OperatorHub |
+| `spec.displayName` | `ToolHive Operator Catalog` | Human-readable name in OperatorHub |
 | `spec.publisher` | `Stacklok` | Organization name |
 | `spec.updateStrategy.registryPoll.interval` | `15m` | Check for updates every 15 minutes |
 
@@ -117,7 +117,7 @@ kubectl get catalogsource -n olm toolhive-catalog
 
 # Expected output:
 # NAME               DISPLAY                    TYPE   PUBLISHER   AGE
-# toolhive-catalog   Toolhive Operator Catalog  grpc   Stacklok    1m
+# toolhive-catalog   ToolHive Operator Catalog  grpc   Stacklok    1m
 
 # Verify catalog pod is running
 kubectl get pods -n olm | grep toolhive-catalog
@@ -132,14 +132,14 @@ kubectl get pods -n olm | grep toolhive-catalog
 kubectl get packagemanifest | grep toolhive
 
 # Expected output:
-# toolhive-operator   Toolhive Operator Catalog   1m
+# toolhive-operator   ToolHive Operator Catalog   1m
 ```
 
 **Step 5: Install operator (optional)**
 ```bash
 # Via OpenShift Console:
 # - Navigate to OperatorHub
-# - Search for "Toolhive"
+# - Search for "ToolHive"
 # - Click "Install"
 
 # Via CLI (create Subscription):
@@ -199,7 +199,7 @@ CatalogSource for legacy OpenShift 4.15-4.18 using OLMv0 SQLite-based index imag
 
 ```yaml
 ---
-# CatalogSource for Toolhive Operator (OLMv0 - Legacy OpenShift 4.15-4.18)
+# CatalogSource for ToolHive Operator (OLMv0 - Legacy OpenShift 4.15-4.18)
 #
 # ⚠️  DEPRECATION NOTICE
 # This CatalogSource uses a SQLite-based index image (OLMv0), which is
@@ -237,7 +237,7 @@ spec:
   image: ghcr.io/stacklok/toolhive/index-olmv0:v0.2.17
 
   # Display name shown in OperatorHub (indicates OLMv0 format)
-  displayName: Toolhive Operator Catalog (Legacy)
+  displayName: ToolHive Operator Catalog (Legacy)
 
   # Publisher organization
   publisher: Stacklok
@@ -266,7 +266,7 @@ spec:
 | `metadata.namespace` | `olm` | Standard OLM namespace for catalog sources |
 | `spec.sourceType` | `grpc` | Image-based catalog served via gRPC |
 | `spec.image` | `ghcr.io/stacklok/toolhive/index-olmv0:v0.2.17` | OLMv0 SQLite index image |
-| `spec.displayName` | `Toolhive Operator Catalog (Legacy)` | Indicates legacy format |
+| `spec.displayName` | `ToolHive Operator Catalog (Legacy)` | Indicates legacy format |
 | `spec.publisher` | `Stacklok` | Organization name |
 | `spec.updateStrategy.registryPoll.interval` | `30m` | Check for updates every 30 minutes |
 
@@ -310,7 +310,7 @@ kubectl get catalogsource -n olm toolhive-catalog-olmv0
 
 # Expected output:
 # NAME                     DISPLAY                           TYPE   PUBLISHER   AGE
-# toolhive-catalog-olmv0   Toolhive Operator Catalog (Legacy)  grpc   Stacklok    1m
+# toolhive-catalog-olmv0   ToolHive Operator Catalog (Legacy)  grpc   Stacklok    1m
 
 # Verify catalog pod is running
 kubectl get pods -n olm | grep toolhive-catalog-olmv0
@@ -325,14 +325,14 @@ kubectl get pods -n olm | grep toolhive-catalog-olmv0
 kubectl get packagemanifest | grep toolhive
 
 # Expected output:
-# toolhive-operator   Toolhive Operator Catalog (Legacy)   1m
+# toolhive-operator   ToolHive Operator Catalog (Legacy)   1m
 ```
 
 **Step 5: Install operator (optional)**
 ```bash
 # Via OpenShift Console:
 # - Navigate to OperatorHub
-# - Search for "Toolhive"
+# - Search for "ToolHive"
 # - Click "Install"
 
 # Via CLI (create Subscription):
@@ -452,8 +452,8 @@ kubectl get catalogsource -n olm
 
 # Expected:
 # NAME                     DISPLAY                           TYPE   PUBLISHER   AGE
-# toolhive-catalog         Toolhive Operator Catalog         grpc   Stacklok    1m
-# toolhive-catalog-olmv0   Toolhive Operator Catalog (Legacy)  grpc   Stacklok    1m
+# toolhive-catalog         ToolHive Operator Catalog         grpc   Stacklok    1m
+# toolhive-catalog-olmv0   ToolHive Operator Catalog (Legacy)  grpc   Stacklok    1m
 
 # Verify operator appears from both catalogs
 kubectl get packagemanifest toolhive-operator -o jsonpath='{.status.catalogSource}'
@@ -489,4 +489,4 @@ Key differences:
 - **Poll interval**: 15m vs 30m (modern vs legacy)
 - **Metadata naming**: Simple vs format-explicit (`toolhive-catalog` vs `toolhive-catalog-olmv0`)
 
-Both examples provide clear documentation, deployment instructions, verification steps, and troubleshooting guidance to help administrators deploy the Toolhive operator on their OpenShift version.
+Both examples provide clear documentation, deployment instructions, verification steps, and troubleshooting guidance to help administrators deploy the ToolHive operator on their OpenShift version.

@@ -6,7 +6,7 @@
 
 ## Overview
 
-This feature enables you to customize container image naming for the Toolhive Operator's three container images (OLMv1 catalog, OLMv0 bundle, OLMv0 index) without modifying the Makefile source code. Each image's registry, organization, name, and tag can be independently overridden using environment variables or command-line arguments.
+This feature enables you to customize container image naming for the ToolHive Operator's three container images (OLMv1 catalog, OLMv0 bundle, OLMv0 index) without modifying the Makefile source code. Each image's registry, organization, name, and tag can be independently overridden using environment variables or command-line arguments.
 
 **What This Enables**:
 - Build images to your personal container registry (Quay.io, Docker Hub, etc.)

@@ -7,7 +7,7 @@
 
 ## Summary
 
-This feature upgrades the Toolhive Operator Metadata project from v0.3.11 to v0.4.2, incorporating the new MCPGroup CRD and updating all version references, container images, and OLM bundle/catalog manifests. The upgrade follows a metadata-only approach using kustomize overlays and ensures all 6 CRDs (adding MCPGroup) are properly included in bundle and catalog artifacts with appropriate RBAC and CSV ownership declarations.
+This feature upgrades the ToolHive Operator Metadata project from v0.3.11 to v0.4.2, incorporating the new MCPGroup CRD and updating all version references, container images, and OLM bundle/catalog manifests. The upgrade follows a metadata-only approach using kustomize overlays and ensures all 6 CRDs (adding MCPGroup) are properly included in bundle and catalog artifacts with appropriate RBAC and CSV ownership declarations.
 
 **Technical Approach**: Download v0.4.2 manifests from upstream (https://github.com/stacklok/toolhive/tree/v0.4.2), update all version tags and image references via kustomize replacements and direct file edits, integrate the new MCPGroup CRD into the existing 5-CRD collection, and rebuild/validate bundle and catalog using existing OLM tooling (opm, operator-sdk).
 

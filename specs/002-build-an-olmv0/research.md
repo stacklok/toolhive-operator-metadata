@@ -78,8 +78,8 @@ LABEL operators.operatorframework.io.bundle.channels.v1=fast
 LABEL operators.operatorframework.io.bundle.channel.default.v1=fast
 
 # Optional: Metadata labels
-LABEL org.opencontainers.image.title="Toolhive Operator Bundle"
-LABEL org.opencontainers.image.description="OLMv0 Bundle for Toolhive Operator"
+LABEL org.opencontainers.image.title="ToolHive Operator Bundle"
+LABEL org.opencontainers.image.description="OLMv0 Bundle for ToolHive Operator"
 ```
 
 **Alternatives Considered**:

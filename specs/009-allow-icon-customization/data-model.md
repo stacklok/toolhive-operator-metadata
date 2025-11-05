@@ -218,7 +218,7 @@ Create compliant default icon:
 - **New location**: `icons/default-icon.svg`
 - **Dimensions**: 80x40 pixels
 - **Aspect ratio**: 1:2 (exact)
-- **Content**: Simplified version of current "M" logo or Toolhive branding
+- **Content**: Simplified version of current "M" logo or ToolHive branding
 - **Encoding**: Pre-encoded base64 version stored for quick fallback
 
 ## Validation Error Messages

@@ -46,7 +46,7 @@ Create operator registry database container images (index images) that properly 
 
 **III. CRD Immutability** ✅ PASS (NON-NEGOTIABLE)
 - This feature does not touch CRDs in `config/crd/`
-- CRDs remain unchanged and compatible with upstream Toolhive operator
+- CRDs remain unchanged and compatible with upstream ToolHive operator
 
 **IV. OpenShift Compatibility** ✅ PASS
 - Index images support both modern (4.19+) and legacy (4.15-4.18) OpenShift versions

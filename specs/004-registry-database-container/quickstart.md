@@ -6,7 +6,7 @@
 
 ## Overview
 
-This guide walks you through building, validating, and deploying operator registry index/catalog images for the Toolhive operator. Based on research findings, the approach differs for modern (OpenShift 4.19+) vs legacy (OpenShift 4.15-4.18) deployments.
+This guide walks you through building, validating, and deploying operator registry index/catalog images for the ToolHive operator. Based on research findings, the approach differs for modern (OpenShift 4.19+) vs legacy (OpenShift 4.15-4.18) deployments.
 
 ## Prerequisites
 
@@ -87,7 +87,7 @@ kubectl get catalogsource -n olm toolhive-catalog
 
 # Expected output:
 # NAME               DISPLAY                    TYPE   PUBLISHER   AGE
-# toolhive-catalog   Toolhive Operator Catalog  grpc   Stacklok    30s
+# toolhive-catalog   ToolHive Operator Catalog  grpc   Stacklok    30s
 
 # Wait for pod to be ready
 kubectl wait --for=condition=Ready pod \
@@ -103,19 +103,19 @@ kubectl get packagemanifest toolhive-operator
 
 # Expected output:
 # NAME                CATALOG                    AGE
-# toolhive-operator   Toolhive Operator Catalog  1m
+# toolhive-operator   ToolHive Operator Catalog  1m
 ```
 
 **Step 4: View in OperatorHub**
 
 - Navigate to OpenShift Console → OperatorHub
-- Search for "Toolhive"
+- Search for "ToolHive"
 - Operator should appear with description and install button
 
 ### Installation
 
 **Option A: Via OpenShift Console**
-1. OperatorHub → Search "Toolhive" → Click "Install"
+1. OperatorHub → Search "ToolHive" → Click "Install"
 2. Select update channel: `fast`
 3. Select install namespace: `opendatahub`
 4. Click "Install"
@@ -555,7 +555,7 @@ After deploying the catalog/index:
 3. **Create MCPServer**: Deploy MCP server instances
 4. **Monitor operator**: Check logs, metrics, and health endpoints
 
-For operator usage documentation, refer to the main Toolhive operator repository.
+For operator usage documentation, refer to the main ToolHive operator repository.
 
 ---
 

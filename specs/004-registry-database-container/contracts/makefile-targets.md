@@ -248,7 +248,7 @@ index-olmv0-all: index-olmv0-build index-olmv0-validate index-olmv0-push ## Run 
 	@echo "Next steps:"
 	@echo "  1. Deploy CatalogSource: kubectl apply -f examples/catalogsource-olmv0.yaml"
 	@echo "  2. Verify catalog: kubectl get catalogsource -n olm toolhive-catalog-olmv0"
-	@echo "  3. Check OperatorHub for Toolhive Operator"
+	@echo "  3. Check OperatorHub for ToolHive Operator"
 	@echo ""
 ```
 
@@ -268,7 +268,7 @@ index-olmv0-all: index-olmv0-build index-olmv0-validate index-olmv0-push ## Run 
 Next steps:
   1. Deploy CatalogSource: kubectl apply -f examples/catalogsource-olmv0.yaml
   2. Verify catalog: kubectl get catalogsource -n olm toolhive-catalog-olmv0
-  3. Check OperatorHub for Toolhive Operator
+  3. Check OperatorHub for ToolHive Operator
 ```
 
 **Usage**:

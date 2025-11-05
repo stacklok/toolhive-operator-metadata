@@ -1,11 +1,11 @@
-# Toolhive Operator Metadata
+# ToolHive Operator Metadata
 
-Kubernetes/OpenShift manifest metadata and OLM bundle for the [Toolhive Operator](https://github.com/stacklok/toolhive), which manages MCP (Model Context Protocol) servers and registries.
+Kubernetes/OpenShift manifest metadata and OLM bundle for the [ToolHive Operator](https://github.com/stacklok/toolhive), which manages MCP (Model Context Protocol) servers and registries.
 
 ## Overview
 
 This repository contains:
-- **Kustomize manifests** for deploying the Toolhive Operator
+- **Kustomize manifests** for deploying the ToolHive Operator
 - **OLMv1 File-Based Catalog (FBC)** for operator distribution via Operator Lifecycle Manager
 - **Bundle metadata** following Operator Framework standards
 

@@ -7,7 +7,7 @@
 
 ## Summary
 
-Create a complete build system for OLMv0 bundle container images that packages the Toolhive Operator manifests (CSV, CRDs) and metadata for deployment to legacy Kubernetes and OpenShift clusters (v4.10-v4.12). The system must coexist with the existing OLMv1 File-Based Catalog build system without conflicts, providing automated build, validation, and tagging capabilities through Makefile targets and Containerfile definitions.
+Create a complete build system for OLMv0 bundle container images that packages the ToolHive Operator manifests (CSV, CRDs) and metadata for deployment to legacy Kubernetes and OpenShift clusters (v4.10-v4.12). The system must coexist with the existing OLMv1 File-Based Catalog build system without conflicts, providing automated build, validation, and tagging capabilities through Makefile targets and Containerfile definitions.
 
 ## Technical Context
 

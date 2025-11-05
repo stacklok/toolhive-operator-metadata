@@ -1,4 +1,4 @@
-# Data Model: Upgrade Toolhive Operator to v0.3.11
+# Data Model: Upgrade ToolHive Operator to v0.3.11
 
 **Feature**: 011-v0-2-17
 **Date**: 2025-10-21

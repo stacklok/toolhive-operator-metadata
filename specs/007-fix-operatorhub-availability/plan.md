@@ -7,7 +7,7 @@
 
 ## Summary
 
-The Toolhive operator File-Based Catalog deploys successfully but does not appear correctly in the OpenShift OperatorHub UI - it shows with no name and zero operators. Additionally, example files reference production registry (ghcr.io/stacklok) instead of development registry (quay.io/roddiekieley), and the Subscription example has an incorrect sourceNamespace.
+The ToolHive operator File-Based Catalog deploys successfully but does not appear correctly in the OpenShift OperatorHub UI - it shows with no name and zero operators. Additionally, example files reference production registry (ghcr.io/stacklok) instead of development registry (quay.io/roddiekieley), and the Subscription example has an incorrect sourceNamespace.
 
 **Primary Requirements**:
 1. Fix catalog metadata to appear in OperatorHub UI with name and operator count

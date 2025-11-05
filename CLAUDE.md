@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This repository contains Kubernetes/OpenShift manifest metadata for the Toolhive Operator, which manages MCP (Model Context Protocol) servers and registries. It uses Kustomize for manifest customization and is built with Kubebuilder v3.
+This repository contains Kubernetes/OpenShift manifest metadata for the ToolHive Operator, which manages MCP (Model Context Protocol) servers and registries. It uses Kustomize for manifest customization and is built with Kubebuilder v3.
 
 The operator manages two primary custom resources:
 - **MCPRegistry** (`mcpregistries.toolhive.stacklok.dev`) - Manages registries of MCP servers

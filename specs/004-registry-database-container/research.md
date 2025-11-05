@@ -6,7 +6,7 @@
 
 ## Overview
 
-This document consolidates research findings on creating operator registry index/catalog images using the `opm` tool from operator-framework/operator-registry. The research addresses the specific needs of the Toolhive operator metadata repository for building proper index images that reference existing OLMv1 catalog and OLMv0 bundle images.
+This document consolidates research findings on creating operator registry index/catalog images using the `opm` tool from operator-framework/operator-registry. The research addresses the specific needs of the ToolHive operator metadata repository for building proper index images that reference existing OLMv1 catalog and OLMv0 bundle images.
 
 ## Key Finding: Terminology Clarification
 
@@ -114,7 +114,7 @@ metadata:
 spec:
   sourceType: grpc
   image: ghcr.io/stacklok/toolhive/index-olmv0:v0.2.17  # INDEX image, not bundle
-  displayName: Toolhive Operator Catalog (OLMv0)
+  displayName: ToolHive Operator Catalog (OLMv0)
   publisher: Stacklok
 ```
 

@@ -5,7 +5,7 @@
 
 ## Overview
 
-This document defines the data structures and entities involved in scorecard testing for the Toolhive Operator metadata repository. Since scorecard is a validation tool rather than a data-processing application, the "data model" here refers to configuration structures and validation artifacts.
+This document defines the data structures and entities involved in scorecard testing for the ToolHive Operator metadata repository. Since scorecard is a validation tool rather than a data-processing application, the "data model" here refers to configuration structures and validation artifacts.
 
 ## Key Entities
 

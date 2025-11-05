@@ -23,7 +23,7 @@
 
 ### User Story 1 - Bundle Metadata Creation (Priority: P1)
 
-Platform engineers need to create OLMv1 catalog metadata for the Toolhive Operator so it can be discovered and installed through Operator Lifecycle Manager v1 in Kubernetes/OpenShift clusters.
+Platform engineers need to create OLMv1 catalog metadata for the ToolHive Operator so it can be discovered and installed through Operator Lifecycle Manager v1 in Kubernetes/OpenShift clusters.
 
 **Why this priority**: Without the basic catalog metadata files, the operator cannot be registered or discovered in OLMv1 systems. This is the foundation for all other functionality.
 
@@ -131,9 +131,9 @@ Platform engineers need to ensure the catalog container image is properly consum
 
 ### Key Entities
 
-- **Catalog Package**: Represents the Toolhive Operator as a distributable package containing metadata about available versions, channels, and upgrade paths
+- **Catalog Package**: Represents the ToolHive Operator as a distributable package containing metadata about available versions, channels, and upgrade paths
 - **Channel**: Represents a release track (e.g., stable, candidate) defining which operator versions are available and how upgrades flow between versions
-- **Bundle**: Represents a specific installable version of the Toolhive Operator including manifests (CRDs, RBAC, deployment) and metadata
+- **Bundle**: Represents a specific installable version of the ToolHive Operator including manifests (CRDs, RBAC, deployment) and metadata
 - **Catalog Image**: Container image containing the FBC metadata files, buildable via opm and consumable by OLMv1 clusters
 
 ## Success Criteria *(mandatory)*

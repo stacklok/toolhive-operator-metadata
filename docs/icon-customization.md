@@ -1,6 +1,6 @@
 # Icon Customization Guide
 
-This guide covers the complete icon customization feature for OLM bundles and catalogs in the Toolhive Operator metadata repository.
+This guide covers the complete icon customization feature for OLM bundles and catalogs in the ToolHive Operator metadata repository.
 
 ## Overview
 

@@ -1,4 +1,4 @@
-# Research: Upgrade Toolhive Operator to v0.3.11
+# Research: Upgrade ToolHive Operator to v0.3.11
 
 **Feature**: 011-v0-2-17
 **Date**: 2025-10-21
@@ -44,7 +44,7 @@
 **What was chosen**: Download v0.3.11 manifests from GitHub release artifacts
 
 **Rationale**:
-- Toolhive operator releases include manifest artifacts in GitHub releases
+- ToolHive operator releases include manifest artifacts in GitHub releases
 - Existing pattern uses downloaded/ directory structure
 - Version-specific directories allow rollback by switching directory references
 

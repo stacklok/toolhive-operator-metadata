@@ -52,7 +52,7 @@
 
 ## Phase 3: User Story 1 - Deploy Operator on Modern OpenShift (OLMv1) (Priority: P1) 🎯 MVP
 
-**Goal**: Enable administrators to deploy the Toolhive operator on OpenShift 4.19+ using proper CatalogSource pattern with OLMv1 catalog image
+**Goal**: Enable administrators to deploy the ToolHive operator on OpenShift 4.19+ using proper CatalogSource pattern with OLMv1 catalog image
 
 **Independent Test**:
 1. Validate existing OLMv1 catalog image using `opm validate catalog/`
@@ -89,7 +89,7 @@
 
 ## Phase 4: User Story 2 - Deploy Operator on Legacy OpenShift (OLMv0) (Priority: P2)
 
-**Goal**: Enable administrators to deploy the Toolhive operator on OpenShift 4.15-4.18 using OLMv0 index image that wraps the bundle image
+**Goal**: Enable administrators to deploy the ToolHive operator on OpenShift 4.15-4.18 using OLMv0 index image that wraps the bundle image
 
 **Independent Test**:
 1. Build OLMv0 index image using `make index-olmv0-build`
@@ -130,7 +130,7 @@
 - [ ] T024 [US2] Create `examples/catalogsource-olmv0.yaml` per contracts/catalogsource-examples.md:
   - References `ghcr.io/stacklok/toolhive/index-olmv0:v0.2.17`
   - Metadata name: `toolhive-catalog-olmv0`
-  - Display name: `Toolhive Operator Catalog (Legacy)`
+  - Display name: `ToolHive Operator Catalog (Legacy)`
   - Includes deprecation notice in header comments
   - Documents OpenShift 4.15-4.18 compatibility
   - Includes deployment instructions and troubleshooting

@@ -1,6 +1,6 @@
 # CatalogSource for OLMv1 File-Based Catalog (Executable)
 #
-# This CatalogSource resource deploys the executable Toolhive operator catalog
+# This CatalogSource resource deploys the executable ToolHive operator catalog
 # to a Kubernetes/OpenShift cluster. The catalog image runs the operator-framework
 # registry-server to serve operator metadata via gRPC.
 #
@@ -35,7 +35,7 @@ spec:
   image: quay.io/roddiekieley/toolhive-operator-catalog:v0.4.2
 
   # Display name shown in OperatorHub UI
-  displayName: Toolhive Operator Catalog
+  displayName: ToolHive Operator Catalog
 
   # Publisher information
   publisher: Stacklok

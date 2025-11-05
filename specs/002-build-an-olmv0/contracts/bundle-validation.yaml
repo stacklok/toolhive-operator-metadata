@@ -1,7 +1,7 @@
 # OLM Bundle Validation Contract
 #
 # This contract defines the expected validation behavior and outputs from
-# operator-sdk bundle validate for the Toolhive Operator bundle.
+# operator-sdk bundle validate for the ToolHive Operator bundle.
 #
 # Validation Command:
 #   operator-sdk bundle validate ./bundle --select-optional suite=operatorframework

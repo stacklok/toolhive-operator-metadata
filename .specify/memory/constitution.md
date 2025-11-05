@@ -21,7 +21,7 @@
   - Consider adding scorecard results to VALIDATION.md documentation
 -->
 
-# Toolhive Operator Metadata Constitution
+# ToolHive Operator Metadata Constitution
 
 ## Core Principles
 
@@ -43,9 +43,9 @@ All manifest customization MUST be performed using kustomize overlays, patches, 
 
 ### III. CRD Immutability (NON-NEGOTIABLE)
 
-Custom Resource Definitions (CRDs) for MCPRegistry and MCPServer MUST NOT be modified in this repository. CRDs are defined and maintained in the upstream Toolhive operator source and must remain unchanged.
+Custom Resource Definitions (CRDs) for MCPRegistry and MCPServer MUST NOT be modified in this repository. CRDs are defined and maintained in the upstream ToolHive operator source and must remain unchanged.
 
-**Rationale**: CRDs define the API contract for the operator. Modifying them breaks compatibility with the upstream operator controller implementation and creates version skew that prevents successful operation. CRD changes must originate from the upstream Toolhive operator project.
+**Rationale**: CRDs define the API contract for the operator. Modifying them breaks compatibility with the upstream operator controller implementation and creates version skew that prevents successful operation. CRD changes must originate from the upstream ToolHive operator project.
 
 ### IV. OpenShift Compatibility
 

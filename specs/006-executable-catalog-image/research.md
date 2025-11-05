@@ -35,7 +35,7 @@ LABEL operators.operatorframework.io.index.configs.v1=/configs
 
 ### Key Differences from Current Implementation
 
-| Aspect | Current (Toolhive) | Required Change |
+| Aspect | Current (ToolHive) | Required Change |
 |--------|-------------------|-----------------|
 | Base image | `FROM scratch` | Change to `quay.io/operator-framework/opm:latest` |
 | Build stages | Single stage | Add builder + runtime stages |
@@ -332,7 +332,7 @@ metadata:
 spec:
   sourceType: grpc
   image: quay.io/user/toolhive-catalog:test
-  displayName: Toolhive Operator Test Catalog
+  displayName: ToolHive Operator Test Catalog
   publisher: Stacklok
   updateStrategy:
     registryPoll:

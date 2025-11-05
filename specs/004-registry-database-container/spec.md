@@ -9,7 +9,7 @@
 
 ### User Story 1 - Deploy Operator on Modern OpenShift via Index Image (Priority: P1)
 
-Platform administrators deploying the Toolhive operator on newer OpenShift versions (4.19+) need to create a CatalogSource that references an index image containing the OLMv1 catalog image. The index image serves as the proper distribution mechanism for operator metadata, allowing OpenShift's registry-server to serve the catalog correctly.
+Platform administrators deploying the ToolHive operator on newer OpenShift versions (4.19+) need to create a CatalogSource that references an index image containing the OLMv1 catalog image. The index image serves as the proper distribution mechanism for operator metadata, allowing OpenShift's registry-server to serve the catalog correctly.
 
 **Why this priority**: This is the primary use case for modern OpenShift deployments and represents the correct architectural pattern for operator distribution. Without this, CatalogSources will incorrectly reference catalog images directly.
 
@@ -25,7 +25,7 @@ Platform administrators deploying the Toolhive operator on newer OpenShift versi
 
 ### User Story 2 - Deploy Operator on Legacy OpenShift via Index Image (Priority: P2)
 
-Platform administrators deploying the Toolhive operator on older OpenShift versions (4.15-4.18) need to create a CatalogSource that references an index image containing the OLMv0 bundle image. The index image provides backward compatibility for older OpenShift installations while maintaining the proper registry architecture.
+Platform administrators deploying the ToolHive operator on older OpenShift versions (4.15-4.18) need to create a CatalogSource that references an index image containing the OLMv0 bundle image. The index image provides backward compatibility for older OpenShift installations while maintaining the proper registry architecture.
 
 **Why this priority**: This enables support for legacy OpenShift versions, expanding the operator's deployment reach. While important, it's secondary to modern deployments as the ecosystem moves toward newer versions.
 

@@ -41,7 +41,7 @@ FROM quay.io/operator-framework/opm:latest
 LABEL operators.operatorframework.io.index.database.v1=/database/index.db
 
 # Optional metadata labels
-LABEL org.opencontainers.image.title="Toolhive Operator Index (OLMv0)"
+LABEL org.opencontainers.image.title="ToolHive Operator Index (OLMv0)"
 LABEL org.opencontainers.image.description="SQLite-based operator index for legacy OpenShift (4.15-4.18)"
 LABEL org.opencontainers.image.vendor="Stacklok"
 LABEL org.opencontainers.image.source="https://github.com/RHEcosystemAppEng/toolhive-operator-metadata"
@@ -67,7 +67,7 @@ LABEL operators.operatorframework.io.index.database.v1=/database/index.db
 
 | Label | Value | Purpose |
 |-------|-------|---------|
-| `org.opencontainers.image.title` | `Toolhive Operator Index (OLMv0)` | Human-readable image title |
+| `org.opencontainers.image.title` | `ToolHive Operator Index (OLMv0)` | Human-readable image title |
 | `org.opencontainers.image.description` | `SQLite-based operator index for legacy OpenShift (4.15-4.18)` | Image description |
 | `org.opencontainers.image.vendor` | `Stacklok` | Organization name |
 | `org.opencontainers.image.source` | `https://github.com/RHEcosystemAppEng/toolhive-operator-metadata` | Source repository |
@@ -121,7 +121,7 @@ The index image contains a SQLite database at `/database/index.db` with the foll
 ```
 name               | default_channel | description
 -------------------|-----------------|----------------------------------
-toolhive-operator  | fast            | Toolhive Operator manages MCP...
+toolhive-operator  | fast            | ToolHive Operator manages MCP...
 ```
 
 **channel table**:
@@ -269,7 +269,7 @@ metadata:
 spec:
   sourceType: grpc
   image: ghcr.io/stacklok/toolhive/index-olmv0:v0.2.17
-  displayName: Toolhive Operator Catalog (OLMv0)
+  displayName: ToolHive Operator Catalog (OLMv0)
   publisher: Stacklok
   updateStrategy:
     registryPoll:
@@ -280,7 +280,7 @@ spec:
 1. OpenShift pulls `ghcr.io/stacklok/toolhive/index-olmv0:v0.2.17`
 2. Creates pod running `opm` gRPC server
 3. OLM queries server for operator metadata
-4. Operator appears in OperatorHub under "Toolhive Operator Catalog (OLMv0)"
+4. Operator appears in OperatorHub under "ToolHive Operator Catalog (OLMv0)"
 
 ## Multi-Version Support (Future Enhancement)
 

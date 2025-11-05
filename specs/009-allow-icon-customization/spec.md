@@ -9,7 +9,7 @@
 
 ### User Story 1 - Replace Default Icon with Custom Branding (Priority: P1)
 
-A developer building the Toolhive operator bundle wants to replace the default blue "M" placeholder icon with their organization's branded logo so that when operators browse OperatorHub, they see proper branding that matches their organization's identity.
+A developer building the ToolHive operator bundle wants to replace the default blue "M" placeholder icon with their organization's branded logo so that when operators browse OperatorHub, they see proper branding that matches their organization's identity.
 
 **Why this priority**: Core functionality - the primary value of this feature. Without this, users cannot customize their operator's visual identity in OperatorHub, which is the main business requirement.
 

@@ -7,7 +7,7 @@
 
 ## What You'll Build
 
-A complete build system for packaging the Toolhive Operator as an OLMv0 bundle container image, enabling deployment to legacy Kubernetes and OpenShift clusters (v4.10-v4.12).
+A complete build system for packaging the ToolHive Operator as an OLMv0 bundle container image, enabling deployment to legacy Kubernetes and OpenShift clusters (v4.10-v4.12).
 
 ## Prerequisites
 
@@ -82,8 +82,8 @@ LABEL operators.operatorframework.io.bundle.package.v1=toolhive-operator
 LABEL operators.operatorframework.io.bundle.channels.v1=fast
 LABEL operators.operatorframework.io.bundle.channel.default.v1=fast
 
-LABEL org.opencontainers.image.title="Toolhive Operator Bundle"
-LABEL org.opencontainers.image.description="OLMv0 Bundle for Toolhive Operator"
+LABEL org.opencontainers.image.title="ToolHive Operator Bundle"
+LABEL org.opencontainers.image.description="OLMv0 Bundle for ToolHive Operator"
 LABEL org.opencontainers.image.vendor="Stacklok"
 LABEL org.opencontainers.image.source="https://github.com/RHEcosystemAppEng/toolhive-operator-metadata"
 LABEL org.opencontainers.image.version="v0.2.17"
@@ -296,7 +296,7 @@ To deploy the bundle to an OLMv0 cluster:
    spec:
      sourceType: grpc
      image: ghcr.io/stacklok/toolhive/bundle:v0.2.17
-     displayName: Toolhive Operator Bundle
+     displayName: ToolHive Operator Bundle
    ```
 
 2. **Apply to cluster**:

@@ -1,7 +1,7 @@
-# Makefile for Toolhive Operator Metadata and OLM Bundle/Catalog
+# Makefile for ToolHive Operator Metadata and OLM Bundle/Catalog
 #
 # This Makefile provides targets for building, validating, and managing
-# OLM bundles and File-Based Catalogs (FBC) for the Toolhive Operator.
+# OLM bundles and File-Based Catalogs (FBC) for the ToolHive Operator.
 
 # OLMv1 Catalog Image Configuration (Modern OpenShift 4.19+)
 # Components can be overridden via environment variables or make arguments:
@@ -43,7 +43,7 @@ OPERATOR_IMG := $(OPERATOR_REGISTRY)/$(OPERATOR_ORG)/$(OPERATOR_NAME):$(OPERATOR
 
 .PHONY: help
 help: ## Display this help message
-	@echo "Toolhive Operator Metadata - Available Targets:"
+	@echo "ToolHive Operator Metadata - Available Targets:"
 	@echo ""
 	@awk 'BEGIN {FS = ":.*##"; printf "\033[36m%-30s\033[0m %s\n", "Target", "Description"} /^[a-zA-Z0-9_-]+:.*?##/ { printf "\033[36m%-30s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
 
@@ -202,7 +202,7 @@ catalog: bundle ## Generate FBC catalog metadata from bundle
 	@echo "name: toolhive-operator" >> catalog/toolhive-operator/catalog.yaml
 	@echo "defaultChannel: fast" >> catalog/toolhive-operator/catalog.yaml
 	@echo "description: |" >> catalog/toolhive-operator/catalog.yaml
-	@echo "  Toolhive Operator manages Model Context Protocol (MCP) servers and registries." >> catalog/toolhive-operator/catalog.yaml
+	@echo "  ToolHive Operator manages Model Context Protocol (MCP) servers and registries." >> catalog/toolhive-operator/catalog.yaml
 	@echo "" >> catalog/toolhive-operator/catalog.yaml
 	@echo "  The operator provides custom resources for:" >> catalog/toolhive-operator/catalog.yaml
 	@echo "  - MCPRegistry: Manages registries of MCP server definitions" >> catalog/toolhive-operator/catalog.yaml
@@ -487,7 +487,7 @@ index-olmv0-all: index-olmv0-build index-olmv0-validate index-olmv0-push ## Run 
 	@echo "Next steps:"
 	@echo "  1. Deploy CatalogSource: kubectl apply -f examples/catalogsource-olmv0.yaml"
 	@echo "  2. Verify catalog: kubectl get catalogsource -n olm toolhive-catalog-olmv0"
-	@echo "  3. Check OperatorHub for Toolhive Operator"
+	@echo "  3. Check OperatorHub for ToolHive Operator"
 	@echo ""
 
 .PHONY: index-clean

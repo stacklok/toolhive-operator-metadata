@@ -9,24 +9,24 @@
 
 ### User Story 1 - OperatorHub Displays Catalog with Operator Count (Priority: P1)
 
-As a cluster administrator deploying the Toolhive catalog to OpenShift, I need the catalog to appear properly in the OperatorHub web UI with a name and correct operator count, so that I can verify the catalog is working and discover available operators.
+As a cluster administrator deploying the ToolHive catalog to OpenShift, I need the catalog to appear properly in the OperatorHub web UI with a name and correct operator count, so that I can verify the catalog is working and discover available operators.
 
 **Why this priority**: This is the core issue - the catalog is deployed but invisible/unusable in the OperatorHub UI. Without proper display, users cannot discover or install the operator through the standard OpenShift interface.
 
-**Independent Test**: Deploy the CatalogSource to an OpenShift cluster and verify the OperatorHub UI shows "Toolhive Operator Catalog" with "1 operator" in the Sources section. Can be tested by accessing OperatorHub → Sources and confirming the catalog entry displays correctly.
+**Independent Test**: Deploy the CatalogSource to an OpenShift cluster and verify the OperatorHub UI shows "ToolHive Operator Catalog" with "1 operator" in the Sources section. Can be tested by accessing OperatorHub → Sources and confirming the catalog entry displays correctly.
 
 **Acceptance Scenarios**:
 
-1. **Given** an OpenShift cluster with OperatorHub enabled, **When** administrator deploys the CatalogSource from examples directory, **Then** the OperatorHub web UI Sources section displays the catalog with name "Toolhive Operator Catalog"
+1. **Given** an OpenShift cluster with OperatorHub enabled, **When** administrator deploys the CatalogSource from examples directory, **Then** the OperatorHub web UI Sources section displays the catalog with name "ToolHive Operator Catalog"
 2. **Given** the CatalogSource is deployed and running, **When** administrator views the Sources section in OperatorHub UI, **Then** the catalog entry shows "(1)" to indicate one operator is available
-3. **Given** the catalog appears in OperatorHub, **When** administrator clicks on the catalog entry, **Then** the Toolhive Operator is listed and can be selected for installation
+3. **Given** the catalog appears in OperatorHub, **When** administrator clicks on the catalog entry, **Then** the ToolHive Operator is listed and can be selected for installation
 4. **Given** the catalog metadata is served correctly, **When** OpenShift queries the catalog via gRPC, **Then** the package information including name, description, and icon is returned successfully
 
 ---
 
 ### User Story 2 - Examples Use Development Registry Locations (Priority: P2)
 
-As a developer working on the Toolhive operator, I need the example files to reference the development container registry (quay.io/roddiekieley) instead of production registry (ghcr.io/stacklok), so that I can test changes using images built from this repository without manually editing configuration files.
+As a developer working on the ToolHive operator, I need the example files to reference the development container registry (quay.io/roddiekieley) instead of production registry (ghcr.io/stacklok), so that I can test changes using images built from this repository without manually editing configuration files.
 
 **Why this priority**: Supporting development workflow by ensuring examples match actual build artifacts. This is lower priority than fixing the OperatorHub display, but important for maintainability and preventing confusion.
 
@@ -43,7 +43,7 @@ As a developer working on the Toolhive operator, I need the example files to ref
 
 ### User Story 3 - Subscription Uses Correct Source Namespace (Priority: P2)
 
-As a cluster administrator installing the Toolhive operator via Subscription, I need the sourceNamespace to point to "openshift-marketplace" (where the CatalogSource is deployed) instead of "olm", so that the subscription can find and install the operator successfully.
+As a cluster administrator installing the ToolHive operator via Subscription, I need the sourceNamespace to point to "openshift-marketplace" (where the CatalogSource is deployed) instead of "olm", so that the subscription can find and install the operator successfully.
 
 **Why this priority**: Incorrect sourceNamespace causes installation failures. This is a critical configuration error but lower priority than the OperatorHub display issue since it only affects installations via Subscription (not manual CSV installation).
 
@@ -70,7 +70,7 @@ As a cluster administrator installing the Toolhive operator via Subscription, I 
 ### Functional Requirements
 
 - **FR-001**: Catalog metadata MUST include all required fields for OpenShift OperatorHub display (package name, displayName, description, icon)
-- **FR-002**: Catalog deployment MUST result in OperatorHub UI showing the catalog name "Toolhive Operator Catalog"
+- **FR-002**: Catalog deployment MUST result in OperatorHub UI showing the catalog name "ToolHive Operator Catalog"
 - **FR-003**: Catalog deployment MUST result in OperatorHub UI showing operator count as "(1)" for the one available operator
 - **FR-004**: CatalogSource example MUST reference catalog image at `quay.io/roddiekieley/toolhive-operator-catalog:v0.2.17`
 - **FR-005**: Bundle image reference in catalog.yaml MUST use `quay.io/roddiekieley/toolhive-operator-bundle:v0.2.17`
@@ -93,9 +93,9 @@ As a cluster administrator installing the Toolhive operator via Subscription, I 
 
 ### Measurable Outcomes
 
-- **SC-001**: OperatorHub web UI displays catalog with name "Toolhive Operator Catalog" within 30 seconds of CatalogSource deployment
+- **SC-001**: OperatorHub web UI displays catalog with name "ToolHive Operator Catalog" within 30 seconds of CatalogSource deployment
 - **SC-002**: OperatorHub web UI shows operator count "(1)" for the catalog in the Sources section
-- **SC-003**: Toolhive Operator appears in OperatorHub search results when catalog is deployed
+- **SC-003**: ToolHive Operator appears in OperatorHub search results when catalog is deployed
 - **SC-004**: Catalog deployment succeeds using unmodified example files from the repository
 - **SC-005**: Subscription-based installation completes successfully without namespace errors
 - **SC-006**: 100% of example files reference quay.io/roddiekieley registry (0 references to ghcr.io/stacklok in examples)

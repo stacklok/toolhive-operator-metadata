@@ -1,4 +1,4 @@
-# Implementation Plan: Upgrade Toolhive Operator to v0.3.11
+# Implementation Plan: Upgrade ToolHive Operator to v0.3.11
 
 **Branch**: `011-v0-2-17` | **Date**: 2025-10-21 | **Spec**: [spec.md](spec.md)
 **Input**: Feature specification from `/specs/011-v0-2-17/spec.md`

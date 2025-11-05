@@ -1,7 +1,7 @@
 ---
-# Subscription for Toolhive Operator
+# Subscription for ToolHive Operator
 #
-# This resource installs the Toolhive Operator from the catalog.
+# This resource installs the ToolHive Operator from the catalog.
 # OLM will automatically deploy the operator and keep it updated.
 #
 # Prerequisites:

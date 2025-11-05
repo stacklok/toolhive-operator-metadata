@@ -1,6 +1,6 @@
 # OLM Bundle Container Image Label Specification
 #
-# This contract defines the required and optional labels for the Toolhive Operator
+# This contract defines the required and optional labels for the ToolHive Operator
 # bundle container image. These labels enable OLM to discover and process the bundle.
 #
 # Labels MUST match the annotations in bundle/metadata/annotations.yaml
@@ -30,10 +30,10 @@ required_labels:
 # Optional OCI Image Labels (SHOULD be present for registry discoverability)
 optional_oci_labels:
   # Human-readable image title
-  org.opencontainers.image.title: "Toolhive Operator Bundle"
+  org.opencontainers.image.title: "ToolHive Operator Bundle"
 
   # Image description
-  org.opencontainers.image.description: "OLMv0 Bundle for Toolhive Operator (manages MCP servers and registries)"
+  org.opencontainers.image.description: "OLMv0 Bundle for ToolHive Operator (manages MCP servers and registries)"
 
   # Vendor/organization name
   org.opencontainers.image.vendor: "Stacklok"

@@ -1,6 +1,6 @@
 # OLMv1 Bundle and Catalog Validation
 
-This document summarizes the validation status for the Toolhive Operator OLMv1 File-Based Catalog bundle.
+This document summarizes the validation status for the ToolHive Operator OLMv1 File-Based Catalog bundle.
 
 **Current Version**: v0.4.2 | **Last Updated**: 2025-10-28
 
@@ -50,7 +50,7 @@ bundle/
 
 **Required Fields** - All Present ✅
 - `metadata.name`: toolhive-operator.v0.4.2
-- `spec.displayName`: Toolhive Operator
+- `spec.displayName`: ToolHive Operator
 - `spec.description`: Comprehensive operator description
 - `spec.version`: 0.2.17
 - `spec.minKubeVersion`: 1.16.0
@@ -240,7 +240,7 @@ operator-sdk scorecard bundle/ -o text
 
 **Overall Status**: ✅ **VALIDATION SUCCESSFUL**
 
-The OLMv1 File-Based Catalog bundle for Toolhive Operator **v0.4.2** has been validated and meets all requirements:
+The OLMv1 File-Based Catalog bundle for ToolHive Operator **v0.4.2** has been validated and meets all requirements:
 
 - ✅ FBC schemas are valid and complete
 - ✅ Bundle structure follows OLM standards (1 CSV + 6 CRDs)

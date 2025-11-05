@@ -1,7 +1,7 @@
 # Quickstart: Executable Catalog Image
 
 **Feature**: 006-executable-catalog-image
-**Audience**: Developers building and testing the Toolhive operator catalog
+**Audience**: Developers building and testing the ToolHive operator catalog
 **Date**: 2025-10-15
 
 ---
@@ -239,7 +239,7 @@ metadata:
 spec:
   sourceType: grpc
   image: ghcr.io/stacklok/toolhive/catalog:v0.2.17
-  displayName: Toolhive Operator Catalog
+  displayName: ToolHive Operator Catalog
   publisher: Stacklok
   updateStrategy:
     registryPoll:
@@ -264,8 +264,8 @@ oc get packagemanifest toolhive-operator -o yaml
 
 # 6. Check OperatorHub UI
 # Navigate to OperatorHub in OpenShift console
-# Search for "Toolhive"
-# Expected: Toolhive Operator appears in catalog
+# Search for "ToolHive"
+# Expected: ToolHive Operator appears in catalog
 
 # 7. Cleanup (when done testing)
 oc delete catalogsource toolhive-catalog -n openshift-marketplace

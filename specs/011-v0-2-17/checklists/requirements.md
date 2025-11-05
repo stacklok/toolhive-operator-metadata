@@ -1,4 +1,4 @@
-# Specification Quality Checklist: Upgrade Toolhive Operator to v0.3.11
+# Specification Quality Checklist: Upgrade ToolHive Operator to v0.3.11
 
 **Purpose**: Validate specification completeness and quality before proceeding to planning
 **Created**: 2025-10-21

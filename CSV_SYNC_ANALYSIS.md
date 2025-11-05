@@ -99,7 +99,7 @@ The CSV declares:
 
 | Field | Value | Source | Status |
 |-------|-------|--------|--------|
-| displayName | Toolhive Operator | Script-generated | ✅ APPROPRIATE |
+| displayName | ToolHive Operator | Script-generated | ✅ APPROPRIATE |
 | description | Comprehensive description of MCP operator | Script-generated | ✅ COMPREHENSIVE |
 | keywords | mcp, model-context-protocol, ai, llm, developer-tools | Script-generated | ✅ APPROPRIATE |
 | maintainers | support@stacklok.com / Stacklok | Script-generated | ✅ CORRECT |

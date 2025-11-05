@@ -6,7 +6,7 @@
 
 ## Overview
 
-This guide walks through building an OLMv1 File-Based Catalog (FBC) for the Toolhive Operator. The process involves three main steps:
+This guide walks through building an OLMv1 File-Based Catalog (FBC) for the ToolHive Operator. The process involves three main steps:
 
 1. **Generate Bundle** - Create traditional OLM bundle from kustomize manifests
 2. **Render FBC** - Convert bundle to FBC format using opm
@@ -168,7 +168,7 @@ schema: olm.package
 name: toolhive-operator
 defaultChannel: stable
 description: |
-  Toolhive Operator manages Model Context Protocol (MCP) servers and registries.
+  ToolHive Operator manages Model Context Protocol (MCP) servers and registries.
 
 ---
 schema: olm.channel
@@ -350,7 +350,7 @@ metadata:
 spec:
   sourceType: grpc
   image: ghcr.io/stacklok/toolhive/catalog:v0.2.17
-  displayName: Toolhive Operator Catalog
+  displayName: ToolHive Operator Catalog
   publisher: Stacklok
   updateStrategy:
     registryPoll:
@@ -437,9 +437,9 @@ metadata:
     categories: AI/ML, Developer Tools
     description: Manages MCP (Model Context Protocol) servers and registries
 spec:
-  displayName: Toolhive Operator
+  displayName: ToolHive Operator
   description: |
-    The Toolhive Operator manages Model Context Protocol (MCP) servers and registries
+    The ToolHive Operator manages Model Context Protocol (MCP) servers and registries
     in Kubernetes and OpenShift clusters.
 
     MCP enables AI assistants to securely access external tools and data sources through

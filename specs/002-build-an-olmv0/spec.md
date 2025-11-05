@@ -9,7 +9,7 @@
 
 ### User Story 1 - Bundle Container Image Build (Priority: P1)
 
-Platform engineers need to build a container image containing the OLMv0 bundle metadata for the Toolhive Operator so they can deploy the operator to legacy Kubernetes or OpenShift clusters (v4.10-v4.12) that do not support OLMv1 File-Based Catalogs.
+Platform engineers need to build a container image containing the OLMv0 bundle metadata for the ToolHive Operator so they can deploy the operator to legacy Kubernetes or OpenShift clusters (v4.10-v4.12) that do not support OLMv1 File-Based Catalogs.
 
 **Why this priority**: This is the core deliverable. Without a buildable bundle container image, operators cannot be distributed to OLMv0 clusters, blocking deployment to legacy infrastructure.
 
@@ -67,7 +67,7 @@ The project must maintain both OLMv0 bundle builds and OLMv1 File-Based Catalog 
 
 1. **Given** the repository contains both bundle and catalog directories, **When** OLMv1 catalog build runs, **Then** it produces a valid File-Based Catalog container image identical to previous builds
 2. **Given** the repository contains both build systems, **When** OLMv0 bundle build runs, **Then** it produces a valid bundle container image without modifying catalog artifacts
-3. **Given** both container images are built, **When** deployed to their respective cluster types, **Then** both successfully install the Toolhive Operator with identical functionality
+3. **Given** both container images are built, **When** deployed to their respective cluster types, **Then** both successfully install the ToolHive Operator with identical functionality
 
 ---
 

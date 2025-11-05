@@ -1,6 +1,6 @@
 # Operator Icons
 
-This directory contains icon assets for the Toolhive Operator's OLM bundle and catalog.
+This directory contains icon assets for the ToolHive Operator's OLM bundle and catalog.
 
 ## Default Icon
 

@@ -44,7 +44,7 @@ schema: olm.package
 name: toolhive-operator
 defaultChannel: fast
 description: |
-  Toolhive Operator manages Model Context Protocol (MCP) servers and registries.
+  ToolHive Operator manages Model Context Protocol (MCP) servers and registries.
 
   The operator provides custom resources for:
   - MCPRegistry: Manages registries of MCP server definitions
@@ -203,4 +203,4 @@ The regenerated catalog.yaml is considered valid when:
 3. Bundle image references quay.io/roddiekieley registry
 4. File size is >10 KB (indicating CSV is embedded)
 5. Deployed catalog creates PackageManifest with operator name
-6. OperatorHub UI shows "Toolhive Operator Catalog" with "(1)" operator count
+6. OperatorHub UI shows "ToolHive Operator Catalog" with "(1)" operator count

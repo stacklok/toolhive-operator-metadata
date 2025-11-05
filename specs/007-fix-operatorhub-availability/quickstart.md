@@ -1,7 +1,7 @@
 # Quickstart: Fix OperatorHub Availability
 
 **Feature**: 007-fix-operatorhub-availability
-**Target Users**: Developers maintaining the Toolhive operator metadata repository
+**Target Users**: Developers maintaining the ToolHive operator metadata repository
 **Time to Complete**: ~15 minutes (excluding image builds/pushes)
 
 ## Overview
@@ -254,7 +254,7 @@ kubectl get packagemanifest -n openshift-marketplace toolhive-operator
 
 # Expected output:
 # NAME                CATALOG                     AGE
-# toolhive-operator   Toolhive Operator Catalog   30s
+# toolhive-operator   ToolHive Operator Catalog   30s
 
 # Inspect PackageManifest details
 kubectl get packagemanifest -n openshift-marketplace toolhive-operator -o yaml | grep -A10 "channels:"
@@ -270,10 +270,10 @@ kubectl get packagemanifest -n openshift-marketplace toolhive-operator -o yaml |
 1. Open OpenShift Console
 2. Navigate to **Operators** → **OperatorHub**
 3. Click **Sources** tab at the top
-4. Look for **"Toolhive Operator Catalog"**
+4. Look for **"ToolHive Operator Catalog"**
 
 **Expected Results**:
-- ✅ Catalog name shows as "Toolhive Operator Catalog" (NOT blank)
+- ✅ Catalog name shows as "ToolHive Operator Catalog" (NOT blank)
 - ✅ Operator count shows as **(1)** (NOT 0)
 - ✅ Catalog status shows as "Healthy" or similar
 
@@ -281,7 +281,7 @@ kubectl get packagemanifest -n openshift-marketplace toolhive-operator -o yaml |
 6. Search for **"toolhive"**
 
 **Expected Results**:
-- ✅ "Toolhive Operator" appears in search results
+- ✅ "ToolHive Operator" appears in search results
 - ✅ Operator has description text
 - ✅ Operator has icon displayed
 
@@ -340,7 +340,7 @@ Resolves issue where catalog appeared with no name and zero operators.
 Tested:
 - opm validate passes
 - PackageManifest created in openshift-marketplace
-- OperatorHub UI shows 'Toolhive Operator Catalog' with '(1)' count
+- OperatorHub UI shows 'ToolHive Operator Catalog' with '(1)' count
 - Operator installs successfully via Subscription"
 
 # Push branch
@@ -371,8 +371,8 @@ Use this checklist to verify the fix is complete:
 ### Deployment (if cluster available)
 - [ ] CatalogSource deploys and shows READY status
 - [ ] PackageManifest `toolhive-operator` exists in openshift-marketplace namespace
-- [ ] OperatorHub Sources shows "Toolhive Operator Catalog" with "(1)"
-- [ ] OperatorHub search finds "Toolhive Operator" with description and icon
+- [ ] OperatorHub Sources shows "ToolHive Operator Catalog" with "(1)"
+- [ ] OperatorHub search finds "ToolHive Operator" with description and icon
 - [ ] Subscription installs operator successfully
 
 ---

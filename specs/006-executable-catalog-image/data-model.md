@@ -66,8 +66,8 @@ Layer 4: Metadata (LABEL, ENTRYPOINT, CMD)
   ├── ENTRYPOINT ["/bin/opm"]
   ├── CMD ["serve", "/configs", "--cache-dir=/tmp/cache"]
   └── LABEL operators.operatorframework.io.index.configs.v1=/configs
-      LABEL org.opencontainers.image.title="Toolhive Operator Catalog"
-      LABEL org.opencontainers.image.description="File-Based Catalog for Toolhive Operator (OLMv1)"
+      LABEL org.opencontainers.image.title="ToolHive Operator Catalog"
+      LABEL org.opencontainers.image.description="File-Based Catalog for ToolHive Operator (OLMv1)"
       LABEL org.opencontainers.image.vendor="Stacklok"
       LABEL org.opencontainers.image.source="https://github.com/RHEcosystemAppEng/toolhive-operator-metadata"
       LABEL org.opencontainers.image.version="v0.2.17"
@@ -114,7 +114,7 @@ schema: olm.package
 name: toolhive-operator
 defaultChannel: fast
 description: |
-  Toolhive Operator manages Model Context Protocol (MCP) servers and registries.
+  ToolHive Operator manages Model Context Protocol (MCP) servers and registries.
 icon:
   base64data: [base64-encoded SVG]
   mediatype: image/svg+xml
@@ -278,8 +278,8 @@ LABEL operators.operatorframework.io.index.configs.v1=/configs
 ### OCI Image Metadata Labels
 
 ```dockerfile
-LABEL org.opencontainers.image.title="Toolhive Operator Catalog"
-LABEL org.opencontainers.image.description="File-Based Catalog for Toolhive Operator (OLMv1)"
+LABEL org.opencontainers.image.title="ToolHive Operator Catalog"
+LABEL org.opencontainers.image.description="File-Based Catalog for ToolHive Operator (OLMv1)"
 LABEL org.opencontainers.image.vendor="Stacklok"
 LABEL org.opencontainers.image.source="https://github.com/RHEcosystemAppEng/toolhive-operator-metadata"
 LABEL org.opencontainers.image.version="v0.2.17"
@@ -307,7 +307,7 @@ metadata:
 spec:
   sourceType: grpc
   image: ghcr.io/stacklok/toolhive/catalog:v0.2.17
-  displayName: Toolhive Operator Catalog
+  displayName: ToolHive Operator Catalog
   publisher: Stacklok
   updateStrategy:
     registryPoll:

@@ -69,7 +69,7 @@ olm.bundle (1+)
 schema: olm.package
 name: toolhive-operator
 defaultChannel: stable
-description: Toolhive Operator manages MCP servers and registries
+description: ToolHive Operator manages MCP servers and registries
 icon:
   base64data: iVBORw0KGgoAAAANS... (base64-encoded image)
   mediatype: image/png

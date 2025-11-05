@@ -1,4 +1,4 @@
-# Feature Specification: Upgrade Toolhive Operator to v0.3.11
+# Feature Specification: Upgrade ToolHive Operator to v0.3.11
 
 **Feature Branch**: `011-v0-2-17`
 **Created**: 2025-10-21
